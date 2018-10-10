@@ -5,6 +5,10 @@
 *.so
 *.dylib
 
+# Executables
+eraftd
+**/eraftd
+
 # Test binary, build with `go test -c`
 *.test
 
