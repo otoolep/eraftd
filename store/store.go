@@ -1,12 +1,17 @@
 package store
 
-type Store struct{}
+type Store struct {
+}
 
 func New() *Store {
 	return &Store{}
 }
 
 func (s *Store) Open() error {
+	return nil
+}
+
+func (s *Store) Close() error {
 	return nil
 }
 
