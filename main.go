@@ -18,10 +18,7 @@ const (
 )
 
 // Command line parameters
-var inmem bool
 var httpAddr string
-var raftAddr string
-var joinAddr string
 var nodeID string
 
 func init() {
