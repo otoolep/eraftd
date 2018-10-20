@@ -48,7 +48,7 @@ func (n *Node) Close() error {
 }
 
 func (n *Node) startRaft() {
-	return
+	initWAL() // XXX CHECK ERROR
 }
 
 func (n *Node) initWAL() error {
