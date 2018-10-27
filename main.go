@@ -19,10 +19,11 @@ const (
 
 // Command line parameters
 var httpAddr string
-var nodeID string
+var nodeID int
 
 func init() {
 	flag.StringVar(&httpAddr, "haddr", DefaultHTTPAddr, "Set the HTTP bind address")
+	flag.IntVar(&nodeID, "id", 1, "Set node ID")
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, "Usage: %s [options] <raft-data-path> \n", os.Args[0])
 		flag.PrintDefaults()
